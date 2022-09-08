@@ -6,11 +6,11 @@ body {
 .container {
   max-width: 1141px;
   margin: 0 auto;
-  padding-top: 50px;
 }
 
 .header {
   margin-bottom: 27px;
+  padding-top: 50px;
 }
 
 .header-logo {
@@ -99,4 +99,198 @@ body {
 
 .header-social a {
   cursor: pointer;
+}
+
+/* bg-content */
+
+.bg-content {
+  position: relative;
+  width: 996px;
+  height: 850px;
+}
+
+.bg-title {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2b3541;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+.bg-subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: #2b3541;
+  text-transform: lowercase;
+}
+
+.bg-content-bottom {
+  margin-left: 30px;
+}
+
+.bg-content-bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3541;
+  text-transform: lowercase;
+}
+
+.bg-content-bottom button {
+  background: #fbf138;
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+  padding: 20px 30px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.bg-content-bottom button:hover {
+  background-color: #2b3541;
+  color: #fbf138;
+}
+
+.bg-content-gradient {
+  position: absolute;
+  width: 464px;
+  height: 850px;
+  top: 0px;
+  right: -140px;
+  width: 464px;
+  height: 850px;
+  background: linear-gradient(
+    90deg,
+    #fbf138 0%,
+    rgba(253, 249, 182, 0.45) 145.23%
+  );
+  opacity: 0.2;
+}
+
+.bg-content-arrow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.bg-content-screen {
+  position: absolute;
+  top: 32px;
+  left: 329px;
+  width: 983px;
+  height: 810px;
+  z-index: 10;
+}
+.bg-content-text {
+  padding-top: 220px;
+  padding-bottom: 274px;
+}
+
+/* Events */
+.events-grid {
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
+  position: relative;
+  width: 100%;
+}
+
+.events-item {
+  position: relative;
+}
+
+.events-cover {
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/maraphon.png);
+}
+
+.events-item-header {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.events-date {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3541;
+  opacity: 0.6;
+}
+
+.events-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  color: #2b3541;
+}
+
+.events-header h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: #2b3541;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.events-hashtag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #fbf138;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #2b3541;
+}
+
+.events-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(251, 241, 56, 0.45) 0%,
+    rgba(253, 249, 182, 0) 100%
+  );
+  z-index: 10;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.events-gradient:hover {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.events-add {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2b3541;
+  padding: 20px 49px;
+  background: #fbf138;
+  box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+  z-index: 11;
+  position: absolute;
+  top: 185px;
+  left: 30px;
+  transition: 0.5s;
+  border: none;
+}
+
+.events-add:hover {
+  background-color: #2b3541;
+  color: #fbf138;
 }
