@@ -446,7 +446,6 @@ body {
 }
 
 .subscription {
-  
 }
 
 .subscription-title {
@@ -513,8 +512,13 @@ form {
   transition: 0.5s;
 }
 
-.input[type="email"]:focus {
-  border: 1px solid red;
+input[type="email"]:focus {
+  border: 1px solid #fbf138;
+  outline: 0;
+}
+input[type="email"]:invalid {
+  border: 1px solid #ae0303;
+  outline: 0;
 }
 
 .subscription-agreement {
@@ -578,4 +582,9 @@ input[type="email"]::placeholder {
 }
 .agree_data {
   text-decoration: underline;
+  color: rgba(43, 53, 65, 0.5);
+}
+
+.agree_data:hover {
+  color: rgba(43, 53, 65, 1);
 }
