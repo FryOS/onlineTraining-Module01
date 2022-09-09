@@ -205,10 +205,24 @@ body {
   position: relative;
 }
 
-.events-cover {
+.events-cover-1 {
   background-repeat: no-repeat;
   position: relative;
   background-image: url(../img/maraphon.png);
+  width: 367.32px;
+  height: 600px;
+}
+.events-cover-2 {
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../img/vebinar_1.png);
+  width: 367.32px;
+  height: 600px;
+}
+.events-cover-3 {
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../img/vebinar_2.png);
   width: 367.32px;
   height: 600px;
 }
@@ -589,7 +603,77 @@ input[type="email"]::placeholder {
 }
 
 /* about */
-.about {
+.about-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 77px;
+}
+
+.about-trainings {
+  display: flex;
+  justify-content: space-between;
+  gap: 67px;
+  padding-top: 80px;
+  padding-bottom: 170px;
+}
+
+.about-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: #2b3541;
+}
+
+.about-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3541;
+}
+
+.about-button {
+  background: #fbf138;
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+  padding: 20px 30px;
+  margin-top: 34px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2b3541;
+}
+
+.about-button:hover {
+  background-color: #2b3541;
+  color: #fbf138;
+  transition: 0.7s;
+}
+
+.about-item h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+}
+
+.about-item p {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3541;
+  opacity: 0.6;
 }
 
 /* footer */
@@ -735,6 +819,6 @@ footer {
   opacity: 0.3;
 }
 
-.footer-rights a{
+.footer-rights a {
   text-decoration: underline;
 }
