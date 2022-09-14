@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adaptive.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
@@ -22,11 +24,14 @@
                     <a href="#" id="top_logo">
                         <img src="img/header_icon_logo.svg" alt="logo.svg" class="header-logo">
                     </a>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                     <nav>
                         <ul class="header-nav">
-                            <li><a class="active" href="index.html">Мероприятия</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a class="active" href="#events">Мероприятия</a></li>
+                            <li><a href="#schedule">Расписание</a></li>
+                            <li><a href="#subscription">О компании</a></li>
                         </ul>
                     </nav>
                     <ul class="header-social">
@@ -53,12 +58,12 @@
                 <img src="img/girl-bg.png" alt="Image 1 screen" class="bg-content-screen">
                 <div class="bg-content-gradient"></div>
                 <a href="#schedule" class="bg-content-arrow">
-                    <img src="img/arrow-icon.svg" alt="arrow.svg">
+                    <img src="img/arrow-icon.svg" alt="arrow.svg" class="img-arrow">
                 </a>
             </div>
         </div>
     </div>
-    <section class="events">
+    <section class="events" id="events">
         <div class="container">
             <div class="events-header">
                 <h2>Ближайшие события</h2>
@@ -105,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="schedule">
+    <section class="schedule" id="schedule">
         <div class="container">
             <div class="schedule-header">
                 <h2>Расписание<br>тренировок</h2>
@@ -150,7 +155,7 @@
                 </div>
             </div>
     </section>
-    <section class="subscription-bg">
+    <section class="subscription-bg" id="subscription">
         <div class="container">
             <div div class="subscription">
                 <div class="subscription-title">
@@ -208,10 +213,10 @@
             <div class="footer-item">
                 <div class="footer-nav">
                     <a href="#" id="top_logo">
-                        <img src="img/header_icon_logo.svg" alt="logo.svg" class="header-logo">
+                        <img src="img/header_icon_logo.svg" alt="logo.svg" class="footer-logo">
                     </a>
                     <nav>
-                        <ul class="footer-nav">
+                        <ul class="footer-nav-link">
                             <li><a class="active" href="index.html">Мероприятия</a></li>
                             <li><a href="#">Расписание</a></li>
                             <li><a href="#">О компании</a></li>
@@ -237,6 +242,33 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="header">
+            <a href="#" id="top_logo">
+                <img src="img/header_icon_logo.svg" alt="logo.svg" class="header-logo-modal">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav">
+                    <li><a href="#events" class="header-nav-link" onclick="closeModal()">Мероприятия</a></li>
+                    <li><a href="#schedule" class="header-nav-link" onclick="closeModal()">Расписания</a></li>
+                    <li><a href="#subscription" class="header-nav-link" onclick="closeModal()">О компании</a></li>
+                </ul>
+            </nav>
+            <ul class="header-social">
+                <li>
+                    <a href="#" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-bottom">
+            <a href="#" class="button modal-btn">Узнать подробнее</a>
+        </div>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ body {
 .header-item {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
 }
 
 .header-nav {
@@ -307,6 +307,7 @@ body {
   left: 30px;
   transition: 0.5s;
   border: none;
+  cursor:pointer
 }
 
 .events-add:hover {
@@ -388,7 +389,7 @@ body {
   border: 1px solid #2b3541;
   position: relative;
   padding: 20px 30px;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .schedule-item:hover {
@@ -453,6 +454,13 @@ body {
 
 /* subscription */
 
+.subscription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .subscription-bg {
   background: #f3f3f3;
   background-position: center center;
@@ -472,7 +480,7 @@ body {
   width: 53px;
   height: 53px;
   position: absolute;
-  left: 240px;
+  left: -40px;
   top: 65px;
   z-index: 1;
   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
@@ -492,7 +500,6 @@ body {
 
 form {
   margin: 0px 0 0 10px;
-  text-align: center;
 }
 
 .form-control-input {
@@ -650,6 +657,7 @@ input[type="email"]::placeholder {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2b3541;
+  cursor: pointer;
 }
 
 .about-button:hover {
@@ -703,13 +711,22 @@ footer {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   list-style-type: none;
   gap: 54px;
   flex-basis: 55%;
+  align-items: center;
 }
 
-.footer-nav a {
+.footer-nav-link {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 54px;
+  flex-basis: 55%;
+  align-items: center;
+}
+
+.footer-nav-link a {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
@@ -718,7 +735,7 @@ footer {
   cursor: pointer;
 }
 
-.footer-nav a::after {
+.footer-nav-link a::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -728,7 +745,7 @@ footer {
   margin-top: 10px;
 }
 
-.footer-nav a:hover::after {
+.footer-nav-link a:hover::after {
   background-color: #2b3541;
   transition: 0.5s;
 }

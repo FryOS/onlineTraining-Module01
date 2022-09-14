@@ -1,0 +1,131 @@
+.burger {
+  width: 29px;
+  height: 22px;
+  background-image: url(../img/burger_icon.svg);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.modal {
+  background-color: #f3f3f3;
+  max-width: 587px;
+  position: absolute;
+  top: -700px;
+  /* ставим по центру */
+  left: 0;
+  right: 0;
+  margin: 20px auto 0;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  padding: 34px 0 0;
+  z-index: 100;
+}
+
+.header-nav {
+  text-align: start;
+}
+.modal #top_logo {
+  left: 0;
+  top: 0;
+  padding-left: 10px;
+  position: absolute;
+}
+.header-logo-modal{
+  width: 78px;
+  height: 24px;
+}
+
+.modal .header {
+  padding-bottom: 86px;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.modal .header-nav {
+  display: block;
+  width: 100%;
+  margin: 37px 0 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.modal .header-nav ul {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  margin: 0;
+  transition: 0.5s;
+}
+.modal .header-nav a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.modal .header-nav li {
+  width: 100%;
+}
+.modal .header__nav a::after {
+  display: none;
+}
+.modal .header-nav li:nth-child(n + 2)::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #2b3541;
+  margin-bottom: 20px;
+}
+.modal-close {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/close-button-icon.svg);
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 33px;
+  right: 8px;
+  cursor: pointer;
+}
+.modal .header .header-social {
+  position: absolute;
+  right: 12px;
+  bottom: 15px;
+}
+.modal-bottom {
+  max-width: 587px;
+  padding: 31px 11px;
+  background-color: rgb(170, 174, 179);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-btn {
+  width: 100%;
+  background: #fbf138;
+  border: none;
+  padding: 20px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2b3541;
+  transition: 0;
+}
+
+.modal-bottom a {
+  text-decoration: none;
+}
+
+.modal-bottom a:hover {
+  background-color: #2b3541;
+  color: #fbf138;
+}
