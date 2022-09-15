@@ -108,6 +108,7 @@ body {
   position: relative;
   width: 996px;
   height: 850px;
+  padding: 23px 0 121px
 }
 
 .bg-title {
@@ -138,6 +139,12 @@ body {
   color: #2b3541;
   text-transform: lowercase;
 }
+.bg-content-arrow{
+  position: absolute;
+  bottom: 125px;
+  left: 0;
+}
+
 
 .bg-content-bottom button {
   background: #fbf138;
@@ -169,10 +176,12 @@ body {
   opacity: 0.2;
 }
 
-.bg-content-arrow {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+.bg-content-bottom{
+  margin-left: 0;
+}
+
+.img-arrow{
+  width: 40px;
 }
 
 .bg-content-screen {
@@ -186,6 +195,7 @@ body {
 .bg-content-text {
   padding-top: 220px;
   padding-bottom: 274px;
+  position: relative;
 }
 
 /* Events */
