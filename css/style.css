@@ -402,6 +402,11 @@ body {
   /* opacity: 0.5; */
 }
 
+.schedule-item img {
+  position: absolute;
+  bottom: 83px;
+}
+
 .schedule-item:hover {
   border: 1px solid transparent;
   transition: 0.7s;

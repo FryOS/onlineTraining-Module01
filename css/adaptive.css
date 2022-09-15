@@ -6,7 +6,7 @@
   }
 
   .bg-content {
-    padding: 23px 0 121px;
+    /* padding: 23px 0 121px; */
     margin: 0 auto;
     width: 100%;
   }
@@ -49,12 +49,126 @@
     bottom: 0;
     left: 53%;
   }
-  .bg-content-arrow{
+  .bg-content-arrow {
     position: absolute;
     bottom: 20px;
     left: 0;
   }
 
+  .events-header h2 {
+    font-size: 26px;
+    line-height: 125%;
+  }
+
+  /* .events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px 327px;
+    position: relative;
+  } */
+  .schedule-header h2 {
+    font-size: 26px;
+    line-height: 32px;
+    padding: 0 30px;
+  }
+  .schedule-header-date {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 224px);
+    padding: 0 30px;
+  }
+  .schedule-item:nth-child(n) {
+    grid-row: inherit;
+    grid-column: inherit;
+  }
+  .schedule-item {
+    padding-left: 24px;
+  }
+  .schedule-item img {
+    bottom: 74px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+  }
+  .schedule-date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #010101;
+    padding-top: 21px;
+    padding-right: 24px;
+  }
+  .schedule-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2b3541;
+    padding: -10px 0;
+  }
+
+  .subscription-title h2 {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    width: 201px;
+  }
+
+  .subscription-circle {
+    width: 31px;
+    height: 31px;
+    left: -14px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control-input {
+    width: 340px;
+    height: 65px;
+  }
+
+  .subscription-button {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+    line-height: 32px;
+    padding: 0 10px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 0 10px;
+  }
+
+  .about-trainings {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .about-item {
+    width: 40%;
+    padding: 0 10px;
+  }
+
+  .about-button {
+    margin: 0 10px;
+  }
+
+  .about-item h3,
+  .about-item p {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 @media (max-width: 768px) {
