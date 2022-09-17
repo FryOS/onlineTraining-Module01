@@ -841,6 +841,7 @@ footer {
 .footer-rights {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 56px;
 }
 
 .footer-rights p {
@@ -853,4 +854,5 @@ footer {
 
 .footer-rights a {
   text-decoration: underline;
+  
 }
