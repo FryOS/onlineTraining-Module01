@@ -116,6 +116,10 @@
     width: 201px;
   }
 
+  .subscription-agreement {
+    padding-bottom: 40px;
+  }
+
   .subscription-circle {
     width: 31px;
     height: 31px;
@@ -125,6 +129,9 @@
   form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    align-items: stretch;
   }
 
   .form-control-input {
@@ -221,6 +228,11 @@
 }
 
 @media (max-width: 545px) {
+  
+  .footer-circle{
+    display: none;
+  }
+  
   .header {
     margin-bottom: 0;
   }
@@ -235,7 +247,7 @@
     max-width: 340px;
     height: auto;
     top: inherit;
-    bottom: 180px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -328,11 +340,73 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .subscription-bg {
+    margin-bottom: 80px;
+  }
+
   .subscription form {
     width: 100%;
     max-width: 360px;
     margin: 50px auto 0;
     align-items: stretch;
+  }
+
+  form {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .form-control-input {
+    width: 100%;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .about-button {
+    max-width: 360px;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-item {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .about-trainings {
+    gap: 40px;
+    padding-bottom: 65px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts {
+    position: static;
+    flex: 0 0 100px;
+    justify-content: space-between;
+  }
+
+  .footer-nav-link {
+    gap: 40px;
+    padding: 0;
+}
+
+  .footer-rights {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

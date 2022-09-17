@@ -107,8 +107,8 @@ body {
 .bg-content {
   position: relative;
   width: 996px;
-  height: 850px;
-  padding: 23px 0 121px
+  /* height: 850px; */
+  padding: 23px 0 121px;
 }
 
 .bg-title {
@@ -139,12 +139,11 @@ body {
   color: #2b3541;
   text-transform: lowercase;
 }
-.bg-content-arrow{
+.bg-content-arrow {
   position: absolute;
   bottom: 125px;
   left: 0;
 }
-
 
 .bg-content-bottom button {
   background: #fbf138;
@@ -176,11 +175,11 @@ body {
   opacity: 0.2;
 }
 
-.bg-content-bottom{
+.bg-content-bottom {
   margin-left: 0;
 }
 
-.img-arrow{
+.img-arrow {
   width: 40px;
 }
 
@@ -317,7 +316,7 @@ body {
   left: 30px;
   transition: 0.5s;
   border: none;
-  cursor:pointer
+  cursor: pointer;
 }
 
 .events-add:hover {
@@ -469,18 +468,19 @@ body {
 
 /* subscription */
 
-.subscription{
+.subscription {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .subscription-bg {
   background: #f3f3f3;
   background-position: center center;
   background-size: cover;
-  padding: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
   margin-bottom: 160px;
 }
 
@@ -515,6 +515,7 @@ body {
 
 form {
   margin: 0px 0 0 10px;
+  
 }
 
 .form-control-input {
@@ -854,5 +855,4 @@ footer {
 
 .footer-rights a {
   text-decoration: underline;
-  
 }
