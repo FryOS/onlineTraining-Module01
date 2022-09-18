@@ -1,0 +1,41 @@
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 20px 50px;
+}
+
+.events-cover-1 {
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../img/maraphon.png);
+  width: 367.32px;
+  height: 600px;
+}
+.events-cover-2 {
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../img/vebinar_1.png);
+  width: 367.32px;
+  height: 600px;
+}
+.events-cover-3 {
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../img/vebinar_2.png);
+  width: 367.32px;
+  height: 600px;
+}
+
+.events-grid > div:nth-child(3) {
+  grid-row: 2 / 4;
+  grid-column: 1 / 3;
+}
+
+.events-item {
+  padding: 8px 0 0 26px;
+  height: 309px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

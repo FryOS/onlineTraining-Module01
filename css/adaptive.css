@@ -60,12 +60,19 @@
     line-height: 125%;
   }
 
-  /* .events-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 380px 327px;
-    position: relative;
-  } */
+  .events-grid {
+    flex-wrap: wrap;
+  }
+
+  .events-item {
+    flex: 0 0 49%;
+    height: 550px;
+  }
+
+  .item-03{
+    flex: 0 0 99%;
+  }
+
   .schedule-header h2 {
     font-size: 26px;
     line-height: 32px;
@@ -228,11 +235,10 @@
 }
 
 @media (max-width: 545px) {
-  
-  .footer-circle{
+  .footer-circle {
     display: none;
   }
-  
+
   .header {
     margin-bottom: 0;
   }
@@ -402,7 +408,7 @@
   .footer-nav-link {
     gap: 40px;
     padding: 0;
-}
+  }
 
   .footer-rights {
     flex-direction: column;
