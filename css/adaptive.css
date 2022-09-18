@@ -54,6 +54,9 @@
     bottom: 20px;
     left: 0;
   }
+.events{
+  margin-bottom: 60px;
+}
 
   .events-header h2 {
     font-size: 26px;
@@ -66,11 +69,57 @@
 
   .events-item {
     flex: 0 0 49%;
-    height: 550px;
   }
 
-  .item-03{
+  .item-03 {
     flex: 0 0 99%;
+  }
+
+  .events-cover-3 {
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../img/vebinar_2_768.png);
+    width: 100%;
+    height: 100%;
+  }
+
+  .events-grid {
+    gap: 8px;
+  }
+
+  .events-cover-3 {
+    height: 336px;
+  }
+
+  .events-cover-1 {
+    height: 309px;
+  }
+  .events-cover-2 {
+    height: 309px;
+  }
+
+  .events-hashtag {
+    position: absolute;
+    right: calc(100% - 86px);
+    padding: 6px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #2b3541;
+  }
+
+  .events-add-plus {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .events-add, .events-gradient{
+    display: none;
   }
 
   .schedule-header h2 {
@@ -279,6 +328,11 @@
   .bg-content-text {
     padding: 0;
   }
+  
+  
+  .events-grid {
+    gap: 2px;
+}
 
   /* --- schedule --- */
   .schedule {
