@@ -1,6 +1,5 @@
 /* Responsive */
 @media (max-width: 900px) {
-
 }
 
 @media (max-width: 769px) {
@@ -83,7 +82,7 @@
     position: relative;
     background-image: url(../img/vebinar_2_768.png);
     width: 100%;
-    height: 336px;
+    height: 340px;
     background-size: contain;
   }
 
@@ -107,6 +106,10 @@
     line-height: 18px;
     text-align: center;
     color: #2b3541;
+    bottom: 0;
+  }
+
+  .events-hashtag:nth-child(3) {
   }
 
   .events-add-plus {
@@ -200,6 +203,11 @@
     order: 2;
     margin-top: 10px;
   }
+
+  /* .about{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+} */
 
   .about-content h2 {
     font-size: 26px;
@@ -431,6 +439,13 @@
   }
 
   .about-content {
+    width: 50%;
+  }
+  .about-img {
+    width: 50%;
+  }
+
+  .about-img img{
     width: 100%;
   }
 
@@ -477,6 +492,10 @@
 
 @media (min-width: 769px) {
   .header-burger {
+    display: none;
+  }
+
+  .events-add-plus {
     display: none;
   }
 }

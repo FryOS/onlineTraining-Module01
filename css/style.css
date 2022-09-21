@@ -642,14 +642,17 @@ input[type="email"]::placeholder {
   gap: 77px;
 }
 
-.about-img{
+.about-img {
   position: relative;
+  width: 50%;
+}
+
+.about-content {
+  width: 50%;
 }
 
 .about-img img {
-  
- 
-  
+  width: 100%;
 }
 
 .about-trainings {
