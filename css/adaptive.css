@@ -77,13 +77,23 @@
     flex: 0 0 99%;
   }
 
+  .events-title {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .events-date {
+    font-size: 12px;
+    line-height: 100%;
+  }
+
   .events-cover-3 {
     background-repeat: no-repeat;
     position: relative;
     background-image: url(../img/vebinar_2_768.png);
     width: 100%;
-    height: 340px;
-    background-size: contain;
+    height: 333px;
+    background-size: cover;
   }
 
   .events-grid {
@@ -121,9 +131,20 @@
     height: 30px;
   }
 
-  .events-add,
-  .events-gradient {
+  .events-add {
     display: none;
+  }
+  .events-gradient {
+    background: linear-gradient(
+      180deg,
+      #fbf138 0%,
+      rgba(253, 249, 182, 0) 100%
+    );
+    opacity: 0.3;
+  }
+
+  .events-gradient:hover {
+    opacity: 0.3;
   }
 
   .schedule-header h2 {
@@ -347,6 +368,12 @@
     line-height: 120%;
   }
 
+  .events-date {
+    font-size: 12px;
+    line-height: 100%;
+    z-index: 11;
+  }
+
   /* --- schedule --- */
   .schedule {
     margin-bottom: 0;
@@ -445,7 +472,7 @@
     width: 50%;
   }
 
-  .about-img img{
+  .about-img img {
     width: 100%;
   }
 
@@ -487,6 +514,19 @@
   .footer-rights {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .events-title {
+    font-size: 16px;
+    line-height: 120%;
+    margin: 0;
+  }
+
+  .events-date {
+    font-size: 12px;
+    line-height: 100%;
   }
 }
 
